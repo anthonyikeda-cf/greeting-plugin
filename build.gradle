@@ -11,7 +11,18 @@ hello {
 }
 
 pluginBundle {
-    website = 'https://www.lightning-engineering.com'
-    vcsUrl = 'https://github.com/anthonyikeda-cf/greeting-plugin'
+    website = 'https://github.com/anthonyikeda-cf/greeting-plugin'
+    vcsUrl = 'https://github.com/anthonyikeda-cf/greeting-plugin.git'
     tags = ['tags', 'for', 'your', 'plugins']
+}
+
+gradlePlugin {
+    plugins {
+        greetingsPlugin {
+            id = 'org.example.greeting'
+            displayName = 'Greeting Plugin'
+            description = 'Workshop plugin on creating and publishing plugins'
+            implementationClass = 'org.example.greeting.GreetingPlugin'
+        }
+    }
 }
