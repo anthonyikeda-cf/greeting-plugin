@@ -1,11 +1,15 @@
 package org.example.greeting;
 
 import org.gradle.api.DefaultTask;
+import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.TaskAction;
 
 public class Greeting extends DefaultTask {
 
+    @Input
     private String message;
+
+    @Input
     private String recipient;
 
     public String getMessage() {
