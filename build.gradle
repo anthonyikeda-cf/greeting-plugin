@@ -1,0 +1,17 @@
+plugins {
+    id 'org.example.greeting'
+    id 'nu.studer.credentials' version '1.0.7'
+    id 'java-gradle-plugin'
+    id 'com.gradle.plugin-publish' version '0.10.0'
+}
+
+hello {
+    message = 'Hi'
+    recipient = 'Gradle'
+}
+
+pluginBundle {
+    website = 'https://www.lightning-engineering.com'
+    vcsUrl = 'https://github.com/anthonyikeda-cf/greeting-plugin'
+    tags = ['tags', 'for', 'your', 'plugins']
+}
